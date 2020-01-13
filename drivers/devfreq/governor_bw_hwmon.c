@@ -969,7 +969,7 @@ int register_bw_hwmon(struct device *dev, struct bw_hwmon *hwmon)
 	node->hyst_length = 0;
 	node->idle_mbps = 400;
 	node->mbps_zones[0] = 0;
-	node->screen_off_max_freq = 381;
+	node->screen_off_max_freq = 762;
 	node->hw = hwmon;
 
 	mutex_lock(&list_lock);
