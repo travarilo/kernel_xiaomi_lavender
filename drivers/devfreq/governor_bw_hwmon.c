@@ -32,7 +32,7 @@
 #include <trace/events/power.h>
 #include "governor.h"
 #include "governor_bw_hwmon.h"
-#include <linux/fb.h>
+#include <linux/display_state.h>
 
 #define NUM_MBPS_ZONES		10
 struct hwmon_node {
@@ -487,6 +487,7 @@ static unsigned long get_bw_and_set_irq(struct hwmon_node *node,
 		*ab = roundup(new_bw, node->bw_step);
 
 	*freq = (new_bw * 100) / io_percent;
+	bool display_on = is_display_on();
 	og_freq = *freq;
 
 	if (!display_on && *freq > node->screen_off_max_freq) {
