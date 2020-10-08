@@ -1,4 +1,4 @@
-/* Copyright (c) 2012-2018, The Linux Foundation. All rights reserved.
+/* Copyright (c) 2012-2018, 2020, The Linux Foundation. All rights reserved.
  * Copyright (C) 2019 XiaoMi, Inc.
  *
  * This program is free software; you can redistribute it and/or modify
@@ -237,6 +237,9 @@ enum {
 	IDX_AFE_PORT_ID_QUATERNARY_MI2S_TX_3,
 	IDX_AFE_PORT_ID_QUATERNARY_MI2S_TX_4,
 	IDX_AFE_PORT_ID_PSEUDOPORT_01,
+	/* IDX 167 -> 168 */
+	IDX_RT_PROXY_PORT_002_RX,
+	IDX_RT_PROXY_PORT_002_TX,
 	AFE_MAX_PORTS
 };
 
